@@ -3,6 +3,8 @@ El ataque de los gatos 😼
 
 
 ## Estructura
+
+```text
 gamejam-practice/
 ├── assets/              # Imágenes, audio, fuentes, etc.
 │   ├── characters/      # Sprites del jugador, gatos, enemigos
