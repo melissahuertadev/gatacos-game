@@ -3,33 +3,33 @@
 [ext_resource type="Texture2D" uid="uid://cqrf64bjkyxa7" path="res://assets/characters/cats/pipo-nekonin001.png" id="1_05ci2"]
 [ext_resource type="Script" uid="uid://b1424mup2233j" path="res://scripts/Enemy.gd" id="1_55jtl"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_yvfbp"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_mpr68"]
 atlas = ExtResource("1_05ci2")
-region = Rect2(0, 64, 32, 32)
+region = Rect2(34, 69, 28, 27)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_qtqmw"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_55jtl"]
 atlas = ExtResource("1_05ci2")
-region = Rect2(32, 64, 32, 32)
+region = Rect2(4, 69, 28, 27)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_dffpx"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_ft8do"]
 atlas = ExtResource("1_05ci2")
-region = Rect2(64, 64, 32, 32)
+region = Rect2(64, 69, 28, 27)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_it62q"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_yvfbp")
+"texture": SubResource("AtlasTexture_mpr68")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_qtqmw")
+"texture": SubResource("AtlasTexture_55jtl")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_dffpx")
+"texture": SubResource("AtlasTexture_ft8do")
 }],
 "loop": true,
 "name": &"left-enemie",
-"speed": 8.0
+"speed": 4.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3gvst"]
@@ -43,8 +43,7 @@ scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_it62q")
 animation = &"left-enemie"
 autoplay = "left-enemie"
-frame = 2
-frame_progress = 1.0
+frame_progress = 0.177916
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1.5, 12)
