@@ -24,6 +24,6 @@ func show_game_over():
 	$GameOverLabel.visible = true
 	GameManager.is_game_over = true
 
-func  _on_score_changed(new_score):
+func _on_score_changed(new_score):
 	score_label.text = "Score: %s" % new_score
-	print(new_score)
+	# print(new_score)

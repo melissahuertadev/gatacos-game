@@ -1,0 +1,64 @@
+[gd_scene load_steps=5 format=3 uid="uid://b1medjhwml3r"]
+
+[ext_resource type="Script" uid="uid://debfytrfvn8e8" path="res://scripts/Splash.gd" id="1_ad0hg"]
+[ext_resource type="Texture2D" uid="uid://bejaoo83hxjll" path="res://assets/backgrounds/splash.png" id="1_y4yub"]
+[ext_resource type="FontFile" uid="uid://do70rsxd56wog" path="res://assets/fonts/katto/Katto-PersonalUse.otf" id="3_0ollq"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_xq6pe"]
+font = ExtResource("3_0ollq")
+font_size = 130
+font_color = Color(0.396078, 0.337255, 0.305882, 1)
+shadow_size = 26
+shadow_color = Color(0.924435, 0.5194, 0.540047, 1)
+shadow_offset = Vector2(2, 2)
+
+[node name="Splash" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ad0hg")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.972549, 0.909804, 0.854902, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_top = 200.0
+offset_right = 1024.0
+offset_bottom = 456.0
+grow_vertical = 2
+scale = Vector2(0.7, 0.7)
+
+[node name="TextureRect" type="TextureRect" parent="CenterContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+texture = ExtResource("1_y4yub")
+stretch_mode = 6
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+offset_left = 79.0
+offset_top = 154.0
+offset_right = 654.0
+offset_bottom = 362.0
+text = "Gatacos"
+label_settings = SubResource("LabelSettings_xq6pe")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SplashTimer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
+[connection signal="timeout" from="SplashTimer" to="." method="_on_splash_timer_timeout"]

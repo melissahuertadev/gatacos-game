@@ -11,13 +11,14 @@ config_version=5
 [application]
 
 config/name="gatacos-practice"
-run/main_scene="uid://dau4hsak6vsv"
+run/main_scene="uid://b1medjhwml3r"
 config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://icon.svg"
 
 [autoload]
 
 GameManager="*res://scenes/GameManager.tscn"
+Global="*res://scripts/Global.gd"
 
 [display]
 

@@ -1,41 +1,42 @@
-[gd_scene load_steps=10 format=3 uid="uid://dau4hsak6vsv"]
+[gd_scene load_steps=11 format=3 uid="uid://dau4hsak6vsv"]
 
-[ext_resource type="Script" uid="uid://cfaqekgvlgru4" path="res://scripts/Main.gd" id="1_rvslj"]
-[ext_resource type="PackedScene" uid="uid://b1ald783aym4l" path="res://scenes/Player.tscn" id="2_0bbpv"]
-[ext_resource type="Texture2D" uid="uid://bxrgwt5vx0qp8" path="res://assets/lives/heart_full.png" id="3_0bbpv"]
-[ext_resource type="PackedScene" uid="uid://bc7yjjjbhkcy1" path="res://scenes/GameManager.tscn" id="3_nxtc6"]
-[ext_resource type="Script" uid="uid://vn4xgx7u0281" path="res://scripts/UIManager.gd" id="3_rarhs"]
-[ext_resource type="Texture2D" uid="uid://c4mg6745puosb" path="res://assets/lives/heart_empty.png" id="5_vcsgt"]
-[ext_resource type="FontFile" uid="uid://b463klon7e8k5" path="res://assets/fonts/game_over.ttf" id="6_c01mt"]
+[ext_resource type="Script" uid="uid://cfaqekgvlgru4" path="res://scripts/Main.gd" id="1_ko0rf"]
+[ext_resource type="PackedScene" uid="uid://b1ald783aym4l" path="res://scenes/player/Player.tscn" id="2_ostsq"]
+[ext_resource type="PackedScene" uid="uid://bc7yjjjbhkcy1" path="res://scenes/GameManager.tscn" id="3_3km4f"]
+[ext_resource type="Script" uid="uid://vn4xgx7u0281" path="res://scripts/UIManager.gd" id="4_qkm1d"]
+[ext_resource type="Texture2D" uid="uid://bxrgwt5vx0qp8" path="res://assets/lives/heart_full.png" id="5_p5fgu"]
+[ext_resource type="Texture2D" uid="uid://c4mg6745puosb" path="res://assets/lives/heart_empty.png" id="6_2tpxt"]
+[ext_resource type="FontFile" uid="uid://b463klon7e8k5" path="res://assets/fonts/game_over.ttf" id="7_jsdfw"]
+[ext_resource type="AudioStream" uid="uid://bysferxt6qqbh" path="res://assets/music/bg_music.ogg" id="8_tck0d"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_vcsgt"]
 line_spacing = 2.0
-font = ExtResource("6_c01mt")
+font = ExtResource("7_jsdfw")
 font_size = 400
 font_color = Color(0.776471, 0.0862745, 0.411765, 1)
 outline_size = 20
 
 [sub_resource type="LabelSettings" id="LabelSettings_c01mt"]
 line_spacing = 1.0
-font = ExtResource("6_c01mt")
+font = ExtResource("7_jsdfw")
 font_size = 88
 font_color = Color(0.298039, 0.266667, 0.25098, 1)
 
 [node name="Main" type="Node2D"]
-script = ExtResource("1_rvslj")
+script = ExtResource("1_ko0rf")
 
-[node name="Player" parent="." instance=ExtResource("2_0bbpv")]
+[node name="Player" parent="." instance=ExtResource("2_ostsq")]
 
-[node name="GameManager" parent="." instance=ExtResource("3_nxtc6")]
+[node name="GameManager" parent="." instance=ExtResource("3_3km4f")]
 
 [node name="EnemySpawnTimer" type="Timer" parent="."]
 wait_time = 2.0
 autostart = true
 
 [node name="UI" type="CanvasLayer" parent="."]
-script = ExtResource("3_rarhs")
-full_heart_texture = ExtResource("3_0bbpv")
-empty_heart_texture = ExtResource("5_vcsgt")
+script = ExtResource("4_qkm1d")
+full_heart_texture = ExtResource("5_p5fgu")
+empty_heart_texture = ExtResource("6_2tpxt")
 
 [node name="HP" type="HBoxContainer" parent="UI"]
 offset_left = 42.0
@@ -83,5 +84,12 @@ grow_horizontal = 2
 grow_vertical = 2
 text = "Score: 0"
 label_settings = SubResource("LabelSettings_c01mt")
+
+[node name="SFXPlayer" type="AudioStreamPlayer2D" parent="."]
+
+[node name="MusicPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_tck0d")
+volume_db = -18.0
+parameters/looping = true
 
 [connection signal="timeout" from="EnemySpawnTimer" to="." method="_on_enemy_spawn_timer_timeout"]
