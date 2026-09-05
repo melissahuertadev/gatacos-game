@@ -1,0 +1,173 @@
+[gd_resource type="SpriteFrames" load_steps=33 format=3 uid="uid://olacyfssn202"]
+
+[ext_resource type="Texture2D" uid="uid://jnsiiokfoilw" path="res://assets/characters/cats/calico/calico_east_01.png" id="1_vuerw"]
+[ext_resource type="Texture2D" uid="uid://s83fm1wdvf73" path="res://assets/characters/cats/calico/calico_east_02.png" id="2_qc0rx"]
+[ext_resource type="Texture2D" uid="uid://xbqo4g5ty7vi" path="res://assets/characters/cats/calico/calico_east_03.png" id="3_ja2q1"]
+[ext_resource type="Texture2D" uid="uid://78kwevdntxh8" path="res://assets/characters/cats/calico/calico_east_04.png" id="4_7pm15"]
+[ext_resource type="Texture2D" uid="uid://chh12di6fcjtl" path="res://assets/characters/cats/calico/calico_north_01.png" id="5_oxxej"]
+[ext_resource type="Texture2D" uid="uid://dx6q66aa7nqol" path="res://assets/characters/cats/calico/calico_north_02.png" id="6_5or5e"]
+[ext_resource type="Texture2D" uid="uid://lh057lsitwsc" path="res://assets/characters/cats/calico/calico_north_03.png" id="7_arryy"]
+[ext_resource type="Texture2D" uid="uid://buiqvq8hl4cih" path="res://assets/characters/cats/calico/calico_north_04.png" id="8_6vqeb"]
+[ext_resource type="Texture2D" uid="uid://cc31udtahreda" path="res://assets/characters/cats/calico/calico_northeast_01.png" id="9_418sd"]
+[ext_resource type="Texture2D" uid="uid://fyyxng78qmn3" path="res://assets/characters/cats/calico/calico_northeast_02.png" id="10_ubks1"]
+[ext_resource type="Texture2D" uid="uid://b4l064ctq7bwk" path="res://assets/characters/cats/calico/calico_northeast_03.png" id="11_h431q"]
+[ext_resource type="Texture2D" uid="uid://7ecvfmkqj1um" path="res://assets/characters/cats/calico/calico_northeast_04.png" id="12_wm20x"]
+[ext_resource type="Texture2D" uid="uid://us4qtvl8lk35" path="res://assets/characters/cats/calico/calico_northwest_01.png" id="13_5sj76"]
+[ext_resource type="Texture2D" uid="uid://bquv31yr2tcdk" path="res://assets/characters/cats/calico/calico_northwest_02.png" id="14_36jd6"]
+[ext_resource type="Texture2D" uid="uid://5qgi56w0f486" path="res://assets/characters/cats/calico/calico_northwest_03.png" id="15_6gus6"]
+[ext_resource type="Texture2D" uid="uid://274mhfed2ryp" path="res://assets/characters/cats/calico/calico_northwest_04.png" id="16_du82q"]
+[ext_resource type="Texture2D" uid="uid://dbd4v4ncnbn0o" path="res://assets/characters/cats/calico/calico_south_01.png" id="17_p0lgk"]
+[ext_resource type="Texture2D" uid="uid://dvl4p0p5s0qr0" path="res://assets/characters/cats/calico/calico_south_02.png" id="18_1pq7x"]
+[ext_resource type="Texture2D" uid="uid://dxo54ulk055o3" path="res://assets/characters/cats/calico/calico_south_03.png" id="19_nwy2i"]
+[ext_resource type="Texture2D" uid="uid://dqmoxadgbnbf3" path="res://assets/characters/cats/calico/calico_south_04.png" id="20_jgf51"]
+[ext_resource type="Texture2D" uid="uid://ciqtffmpg8rsd" path="res://assets/characters/cats/calico/calico_southeast_01.png" id="21_a45gv"]
+[ext_resource type="Texture2D" uid="uid://cwgnyie212rna" path="res://assets/characters/cats/calico/calico_southeast_02.png" id="22_qxtj4"]
+[ext_resource type="Texture2D" uid="uid://c7lgga6k6aalm" path="res://assets/characters/cats/calico/calico_southeast_03.png" id="23_jenj5"]
+[ext_resource type="Texture2D" uid="uid://7bi6m85dsskj" path="res://assets/characters/cats/calico/calico_southeast_04.png" id="24_s3gyf"]
+[ext_resource type="Texture2D" uid="uid://dhwy1ewo14sk5" path="res://assets/characters/cats/calico/calico_southwest_01.png" id="25_2a5q1"]
+[ext_resource type="Texture2D" uid="uid://ctgktwvvgunlw" path="res://assets/characters/cats/calico/calico_southwest_02.png" id="26_2qprk"]
+[ext_resource type="Texture2D" uid="uid://bucwclgx18um0" path="res://assets/characters/cats/calico/calico_southwest_03.png" id="27_vcm0u"]
+[ext_resource type="Texture2D" uid="uid://dp5vrhfgfxrar" path="res://assets/characters/cats/calico/calico_southwest_04.png" id="28_42vt8"]
+[ext_resource type="Texture2D" uid="uid://6hnk7pa557b7" path="res://assets/characters/cats/calico/calico_west_01.png" id="29_0jocn"]
+[ext_resource type="Texture2D" uid="uid://sx4d5kti0ijs" path="res://assets/characters/cats/calico/calico_west_02.png" id="30_6if61"]
+[ext_resource type="Texture2D" uid="uid://d4e58jtfhha81" path="res://assets/characters/cats/calico/calico_west_03.png" id="31_t7gme"]
+[ext_resource type="Texture2D" uid="uid://by5ku7jifote0" path="res://assets/characters/cats/calico/calico_west_04.png" id="32_ivgfg"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_vuerw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_qc0rx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ja2q1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_7pm15")
+}],
+"loop": true,
+"name": &"calico_walk_east",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_oxxej")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_5or5e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_arryy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_6vqeb")
+}],
+"loop": true,
+"name": &"calico_walk_north",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_418sd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ubks1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_h431q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_wm20x")
+}],
+"loop": true,
+"name": &"calico_walk_northeast",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_5sj76")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_36jd6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_6gus6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_du82q")
+}],
+"loop": true,
+"name": &"calico_walk_northwest",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_p0lgk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_1pq7x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_nwy2i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_jgf51")
+}],
+"loop": true,
+"name": &"calico_walk_south",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("21_a45gv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_qxtj4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_jenj5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_s3gyf")
+}],
+"loop": true,
+"name": &"calico_walk_southeast",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("25_2a5q1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_2qprk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_vcm0u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_42vt8")
+}],
+"loop": true,
+"name": &"calico_walk_southwest",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("29_0jocn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_6if61")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_t7gme")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_ivgfg")
+}],
+"loop": true,
+"name": &"calico_walk_west",
+"speed": 5.0
+}]
