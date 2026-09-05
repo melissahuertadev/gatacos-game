@@ -6,19 +6,20 @@ extends Area2D
 @export var enemy_type: int = 1 # 1: puntos, 2: quita vida
 @export var damage: int = 0 # 0: puntos, 1: vidas
 @export var spawn_edge: String = Global.EDGE_LEFT
-@export var skin: String = "cream"
+@export var skin: String = "calico"
 
 var direction = Vector2.ZERO
 var player_position = Vector2.ZERO
 
 	
 func _ready():
+	# Conectar la señal de colisión
 	if not is_connected("area_entered", Callable(self, "_on_area_entered")):
-		# Conectar la señal de colisión
 		connect("area_entered", Callable(self, "_on_area_entered"))
 	
 	update_speed()
 	set_random_skin()
+	update_sprite_frames()
 	set_spawn_position()
 	update_direction()
 	update_animation()
@@ -82,12 +83,40 @@ func update_direction():
 	direction = (player_position - position).normalized()
 	
 func update_animation():
-	match spawn_edge:
-		Global.EDGE_LEFT:
-			$AnimatedSprite2D.play(skin + "_walk_left")
-		Global.EDGE_RIGHT:
-			$AnimatedSprite2D.play(skin + "_walk_right")
-		Global.EDGE_TOP:
-			$AnimatedSprite2D.play(skin + "_walk_top")
-		Global.EDGE_BOTTOM:
-			$AnimatedSprite2D.play(skin + "_walk_bottom")
+	var angle = direction.angle()
+	var direction_index = int(round(angle / (PI / 4.0)))
+	direction_index = (direction_index + 8) % 8
+
+	var direction_name = Global.ENEMY_DIRECTIONS[direction_index]
+	$AnimatedSprite2D.play(skin + "_walk_" + direction_name)
+	
+	match direction_name:
+		"south", "north":
+			$AnimatedSprite2D.scale = Vector2(4.0, 4.0)
+		_:
+			$AnimatedSprite2D.scale = Vector2(3.25, 3.25)
+
+		#
+	#match spawn_edge:
+		#Global.EDGE_LEFT:
+			#$AnimatedSprite2D.play(skin + "_walk_left")
+		#Global.EDGE_RIGHT:
+			#$AnimatedSprite2D.play(skin + "_walk_right")
+		#Global.EDGE_TOP:
+			#$AnimatedSprite2D.play(skin + "_walk_top")
+		#Global.EDGE_BOTTOM:
+			#$AnimatedSprite2D.play(skin + "_walk_bottom")
+
+func update_sprite_frames():
+	var sprite_frames_path: String = "res://assets/characters/cats/%s/%s_sprite_frames.tres" % [
+		skin,
+		skin
+	]
+
+	var sprite_frames: SpriteFrames = load(sprite_frames_path) as SpriteFrames
+
+	if sprite_frames == null:
+		push_error("No se pudo cargar SpriteFrames: " + sprite_frames_path)
+		return
+
+	$AnimatedSprite2D.sprite_frames = sprite_frames
