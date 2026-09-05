@@ -1,0 +1,50 @@
+[gd_scene load_steps=2 format=3 uid="uid://cmh7i1tyko0ah"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_73umf"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"negro_walk_east",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"negro_walk_north",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"negro_walk_northeast",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"negro_walk_northwest",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"negro_walk_south",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"negro_walk_southeast",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"negro_walk_southwest",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"negro_walk_west",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_73umf")
+animation = &"negro_walk_east"

@@ -1,0 +1,180 @@
+[gd_scene load_steps=34 format=3 uid="uid://bkob38123dvv"]
+
+[ext_resource type="Texture2D" uid="uid://cbb257ckabv37" path="res://assets/characters/cats/orange/orange_east_01.png" id="1_nqmjx"]
+[ext_resource type="Texture2D" uid="uid://be6hnn0oyk7di" path="res://assets/characters/cats/orange/orange_east_02.png" id="2_xqfph"]
+[ext_resource type="Texture2D" uid="uid://ck63iamwhlhnw" path="res://assets/characters/cats/orange/orange_east_03.png" id="3_tflwt"]
+[ext_resource type="Texture2D" uid="uid://1ljw85kgugi4" path="res://assets/characters/cats/orange/orange_east_04.png" id="4_hi0fb"]
+[ext_resource type="Texture2D" uid="uid://bn3q8xw7c17k4" path="res://assets/characters/cats/orange/orange_north_01.png" id="5_esxv1"]
+[ext_resource type="Texture2D" uid="uid://gflkybhfflre" path="res://assets/characters/cats/orange/orange_north_02.png" id="6_831p8"]
+[ext_resource type="Texture2D" uid="uid://c1im0tmi0icxl" path="res://assets/characters/cats/orange/orange_north_03.png" id="7_pk2nj"]
+[ext_resource type="Texture2D" uid="uid://cbv54qjqui5ob" path="res://assets/characters/cats/orange/orange_north_04.png" id="8_in2ea"]
+[ext_resource type="Texture2D" uid="uid://dc7tci6mcuo7l" path="res://assets/characters/cats/orange/orange_northeast_01.png" id="9_kglxo"]
+[ext_resource type="Texture2D" uid="uid://cqnacugwvisrn" path="res://assets/characters/cats/orange/orange_northeast_02.png" id="10_5weyn"]
+[ext_resource type="Texture2D" uid="uid://7epvcrqspooj" path="res://assets/characters/cats/orange/orange_northeast_03.png" id="11_uasrp"]
+[ext_resource type="Texture2D" uid="uid://c68hwbnm3k16h" path="res://assets/characters/cats/orange/orange_northeast_04.png" id="12_teq0k"]
+[ext_resource type="Texture2D" uid="uid://cdo2ts3u7fy24" path="res://assets/characters/cats/orange/orange_northwest_01.png" id="13_3f85j"]
+[ext_resource type="Texture2D" uid="uid://ovbtoqtjklda" path="res://assets/characters/cats/orange/orange_northwest_02.png" id="14_y0dvy"]
+[ext_resource type="Texture2D" uid="uid://b337c8uyq4eum" path="res://assets/characters/cats/orange/orange_northwest_03.png" id="15_arxj7"]
+[ext_resource type="Texture2D" uid="uid://cadsqjowmnx2b" path="res://assets/characters/cats/orange/orange_northwest_04.png" id="16_uywx8"]
+[ext_resource type="Texture2D" uid="uid://clpunu5isuc5e" path="res://assets/characters/cats/orange/orange_south_01.png" id="17_28fxx"]
+[ext_resource type="Texture2D" uid="uid://c7ucq8ylgu8ia" path="res://assets/characters/cats/orange/orange_south_02.png" id="18_atf4c"]
+[ext_resource type="Texture2D" uid="uid://bnsoryg5xhkfn" path="res://assets/characters/cats/orange/orange_south_03.png" id="19_bvr50"]
+[ext_resource type="Texture2D" uid="uid://bmhq6pi656k14" path="res://assets/characters/cats/orange/orange_south_04.png" id="20_6y51n"]
+[ext_resource type="Texture2D" uid="uid://d2aiqd0i6kq1l" path="res://assets/characters/cats/orange/orange_southeast_01.png" id="21_5b1q1"]
+[ext_resource type="Texture2D" uid="uid://lncv7jvm0d5c" path="res://assets/characters/cats/orange/orange_southeast_02.png" id="22_x54f0"]
+[ext_resource type="Texture2D" uid="uid://ceyn3ql4v7ckh" path="res://assets/characters/cats/orange/orange_southeast_03.png" id="23_7yj2o"]
+[ext_resource type="Texture2D" uid="uid://b0om78vn8npp8" path="res://assets/characters/cats/orange/orange_southeast_04.png" id="24_2qlpy"]
+[ext_resource type="Texture2D" uid="uid://dd1k7h0g3lhve" path="res://assets/characters/cats/orange/orange_southwest_01.png" id="25_pvmkk"]
+[ext_resource type="Texture2D" uid="uid://dmfhh2pjpswbp" path="res://assets/characters/cats/orange/orange_southwest_02.png" id="26_2y2li"]
+[ext_resource type="Texture2D" uid="uid://rngim2yqc5vp" path="res://assets/characters/cats/orange/orange_southwest_03.png" id="27_gcvxw"]
+[ext_resource type="Texture2D" uid="uid://sg4cvahp77jf" path="res://assets/characters/cats/orange/orange_southwest_04.png" id="28_3kk7g"]
+[ext_resource type="Texture2D" uid="uid://bnih653i16fti" path="res://assets/characters/cats/orange/orange_west_01.png" id="29_o5ira"]
+[ext_resource type="Texture2D" uid="uid://dvfwus45bh1y5" path="res://assets/characters/cats/orange/orange_west_02.png" id="30_xmj66"]
+[ext_resource type="Texture2D" uid="uid://dyke7wc8fmda4" path="res://assets/characters/cats/orange/orange_west_03.png" id="31_1rduc"]
+[ext_resource type="Texture2D" uid="uid://54uq0t4xsmqp" path="res://assets/characters/cats/orange/orange_west_04.png" id="32_j5lvn"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7bmjg"]
+animations = [{
+"frames": [{
+"duration": 1.2,
+"texture": ExtResource("1_nqmjx")
+}, {
+"duration": 1.2,
+"texture": ExtResource("2_xqfph")
+}, {
+"duration": 1.2,
+"texture": ExtResource("3_tflwt")
+}, {
+"duration": 1.2,
+"texture": ExtResource("4_hi0fb")
+}],
+"loop": true,
+"name": &"orange_walk_east",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.2,
+"texture": ExtResource("5_esxv1")
+}, {
+"duration": 1.2,
+"texture": ExtResource("6_831p8")
+}, {
+"duration": 1.2,
+"texture": ExtResource("7_pk2nj")
+}, {
+"duration": 1.2,
+"texture": ExtResource("8_in2ea")
+}],
+"loop": true,
+"name": &"orange_walk_north",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.2,
+"texture": ExtResource("9_kglxo")
+}, {
+"duration": 1.2,
+"texture": ExtResource("10_5weyn")
+}, {
+"duration": 1.2,
+"texture": ExtResource("11_uasrp")
+}, {
+"duration": 1.2,
+"texture": ExtResource("12_teq0k")
+}],
+"loop": true,
+"name": &"orange_walk_northeast",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.2,
+"texture": ExtResource("13_3f85j")
+}, {
+"duration": 1.2,
+"texture": ExtResource("14_y0dvy")
+}, {
+"duration": 1.2,
+"texture": ExtResource("15_arxj7")
+}, {
+"duration": 1.2,
+"texture": ExtResource("16_uywx8")
+}],
+"loop": true,
+"name": &"orange_walk_northwest",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.2,
+"texture": ExtResource("17_28fxx")
+}, {
+"duration": 1.2,
+"texture": ExtResource("18_atf4c")
+}, {
+"duration": 1.2,
+"texture": ExtResource("19_bvr50")
+}, {
+"duration": 1.2,
+"texture": ExtResource("20_6y51n")
+}],
+"loop": true,
+"name": &"orange_walk_south",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.2,
+"texture": ExtResource("21_5b1q1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_x54f0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_7yj2o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_2qlpy")
+}],
+"loop": true,
+"name": &"orange_walk_southeast",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.2,
+"texture": ExtResource("25_pvmkk")
+}, {
+"duration": 1.2,
+"texture": ExtResource("26_2y2li")
+}, {
+"duration": 1.2,
+"texture": ExtResource("27_gcvxw")
+}, {
+"duration": 1.2,
+"texture": ExtResource("28_3kk7g")
+}],
+"loop": true,
+"name": &"orange_walk_southwest",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 0.8,
+"texture": ExtResource("29_o5ira")
+}, {
+"duration": 0.8,
+"texture": ExtResource("30_xmj66")
+}, {
+"duration": 0.8,
+"texture": ExtResource("31_1rduc")
+}, {
+"duration": 0.8,
+"texture": ExtResource("32_j5lvn")
+}],
+"loop": true,
+"name": &"orange_walk_west",
+"speed": 5.0
+}]
+
+[node name="CatAnimationTest" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_7bmjg")
+animation = &"orange_walk_northwest"
+autoplay = "orange_walk_southeast"
