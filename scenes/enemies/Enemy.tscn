@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dxoha5nbqmr3j"]
 
 [ext_resource type="Script" uid="uid://b1424mup2233j" path="res://scripts/Enemy.gd" id="1_55jtl"]
-[ext_resource type="SpriteFrames" uid="uid://olacyfssn202" path="res://assets/characters/cats/calico/calico_sprite_frames.tres" id="2_k7o7a"]
+[ext_resource type="SpriteFrames" uid="uid://cbex7d05r3l8f" path="res://scenes/tres/orange_sprite_frames_test.tres" id="2_k7o7a"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3gvst"]
 size = Vector2(77, 90)
@@ -13,7 +13,9 @@ script = ExtResource("1_55jtl")
 position = Vector2(0, 10)
 scale = Vector2(4, 4)
 sprite_frames = ExtResource("2_k7o7a")
-animation = &"calico_walk_east"
+animation = &"orange_walk_northwest"
+frame = 1
+frame_progress = 0.727756
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1.5, 16)

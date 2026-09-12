@@ -1,4 +1,4 @@
-[gd_resource type="SpriteFrames" load_steps=33 format=3 uid="uid://bnp2wl6i80uml"]
+[gd_resource type="SpriteFrames" load_steps=31 format=3 uid="uid://bnp2wl6i80uml"]
 
 [ext_resource type="Texture2D" uid="uid://sxg75ai2ew68" path="res://assets/characters/cats/black/black_east_01.png" id="1_2bg65"]
 [ext_resource type="Texture2D" uid="uid://08c1l3wojwwd" path="res://assets/characters/cats/black/black_east_02.png" id="2_ngce0"]
@@ -11,9 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://b2bnufbthv623" path="res://assets/characters/cats/black/black_northeast_01.png" id="9_gl51b"]
 [ext_resource type="Texture2D" uid="uid://j10wijmc8t77" path="res://assets/characters/cats/black/black_northeast_02.png" id="10_1gedw"]
 [ext_resource type="Texture2D" uid="uid://bgdouyxgoecu4" path="res://assets/characters/cats/black/black_northeast_03.png" id="11_myau6"]
-[ext_resource type="Texture2D" uid="uid://djxd4v7f5jw8t" path="res://assets/characters/cats/black/black_northeast_04.png" id="12_6x7do"]
 [ext_resource type="Texture2D" uid="uid://3j818upqyiqk" path="res://assets/characters/cats/black/black_northwest_01.png" id="13_gn3ch"]
-[ext_resource type="Texture2D" uid="uid://c2drwe02ikg8l" path="res://assets/characters/cats/black/black_northwest_02.png" id="14_jh4xp"]
 [ext_resource type="Texture2D" uid="uid://cymx8w4kinyq1" path="res://assets/characters/cats/black/black_northwest_03.png" id="15_c27m5"]
 [ext_resource type="Texture2D" uid="uid://dlalyn7xaa3cy" path="res://assets/characters/cats/black/black_northwest_04.png" id="16_ojva6"]
 [ext_resource type="Texture2D" uid="uid://c742a40sorxgk" path="res://assets/characters/cats/black/black_south_01.png" id="17_a8ie5"]
@@ -37,16 +35,19 @@
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_2bg65")
+"texture": ExtResource("4_1oobb")
 }, {
-"duration": 1.0,
+"duration": 0.4,
 "texture": ExtResource("2_ngce0")
+}, {
+"duration": 0.6,
+"texture": ExtResource("1_2bg65")
 }, {
 "duration": 1.0,
 "texture": ExtResource("3_d6ab2")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_1oobb")
+"texture": ExtResource("1_2bg65")
 }],
 "loop": true,
 "name": &"black_walk_east",
@@ -54,13 +55,19 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("5_sjlo4")
-}, {
-"duration": 1.0,
 "texture": ExtResource("6_cgck3")
 }, {
 "duration": 1.0,
+"texture": ExtResource("8_0ggj5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_sjlo4")
+}, {
+"duration": 1.0,
 "texture": ExtResource("7_s1njk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_sjlo4")
 }, {
 "duration": 1.0,
 "texture": ExtResource("8_0ggj5")
@@ -70,30 +77,24 @@ animations = [{
 "speed": 5.0
 }, {
 "frames": [{
-"duration": 1.0,
+"duration": 0.5,
 "texture": ExtResource("9_gl51b")
 }, {
-"duration": 1.0,
-"texture": ExtResource("10_1gedw")
-}, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": ExtResource("11_myau6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("12_6x7do")
+"texture": ExtResource("10_1gedw")
 }],
 "loop": true,
 "name": &"black_walk_northeast",
 "speed": 5.0
 }, {
 "frames": [{
-"duration": 1.0,
+"duration": 0.5,
 "texture": ExtResource("13_gn3ch")
 }, {
-"duration": 1.0,
-"texture": ExtResource("14_jh4xp")
-}, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": ExtResource("15_c27m5")
 }, {
 "duration": 1.0,
@@ -111,10 +112,10 @@ animations = [{
 "texture": ExtResource("18_8kudq")
 }, {
 "duration": 1.0,
-"texture": ExtResource("19_qii08")
+"texture": ExtResource("20_aits6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("20_aits6")
+"texture": ExtResource("19_qii08")
 }],
 "loop": true,
 "name": &"black_walk_south",
@@ -124,14 +125,20 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("21_4he1x")
 }, {
-"duration": 1.0,
+"duration": 0.8,
+"texture": ExtResource("24_hrc14")
+}, {
+"duration": 0.3,
 "texture": ExtResource("22_jo43d")
 }, {
 "duration": 1.0,
 "texture": ExtResource("23_7f6k6")
 }, {
-"duration": 1.0,
+"duration": 0.8,
 "texture": ExtResource("24_hrc14")
+}, {
+"duration": 0.3,
+"texture": ExtResource("22_jo43d")
 }],
 "loop": true,
 "name": &"black_walk_southeast",
@@ -141,14 +148,20 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("25_63prk")
 }, {
-"duration": 1.0,
+"duration": 0.8,
+"texture": ExtResource("28_1mqra")
+}, {
+"duration": 0.3,
 "texture": ExtResource("26_w3l57")
 }, {
 "duration": 1.0,
 "texture": ExtResource("27_7q31y")
 }, {
-"duration": 1.0,
+"duration": 0.8,
 "texture": ExtResource("28_1mqra")
+}, {
+"duration": 0.3,
+"texture": ExtResource("26_w3l57")
 }],
 "loop": true,
 "name": &"black_walk_southwest",
@@ -156,16 +169,19 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("29_rvse3")
+"texture": ExtResource("32_oi3ka")
 }, {
-"duration": 1.0,
+"duration": 0.4,
 "texture": ExtResource("30_7ha2x")
+}, {
+"duration": 0.6,
+"texture": ExtResource("29_rvse3")
 }, {
 "duration": 1.0,
 "texture": ExtResource("31_wq5i5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("32_oi3ka")
+"texture": ExtResource("29_rvse3")
 }],
 "loop": true,
 "name": &"black_walk_west",

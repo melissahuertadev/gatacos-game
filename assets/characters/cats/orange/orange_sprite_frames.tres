@@ -1,4 +1,4 @@
-[gd_resource type="SpriteFrames" load_steps=33 format=3 uid="uid://v5d3wpea3yx6"]
+[gd_resource type="SpriteFrames" load_steps=31 format=3 uid="uid://v5d3wpea3yx6"]
 
 [ext_resource type="Texture2D" uid="uid://cbb257ckabv37" path="res://assets/characters/cats/orange/orange_east_01.png" id="1_l0j33"]
 [ext_resource type="Texture2D" uid="uid://be6hnn0oyk7di" path="res://assets/characters/cats/orange/orange_east_02.png" id="2_ukwk8"]
@@ -11,9 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://dc7tci6mcuo7l" path="res://assets/characters/cats/orange/orange_northeast_01.png" id="9_v703h"]
 [ext_resource type="Texture2D" uid="uid://cqnacugwvisrn" path="res://assets/characters/cats/orange/orange_northeast_02.png" id="10_17frq"]
 [ext_resource type="Texture2D" uid="uid://7epvcrqspooj" path="res://assets/characters/cats/orange/orange_northeast_03.png" id="11_drran"]
-[ext_resource type="Texture2D" uid="uid://c68hwbnm3k16h" path="res://assets/characters/cats/orange/orange_northeast_04.png" id="12_yi4ct"]
 [ext_resource type="Texture2D" uid="uid://cdo2ts3u7fy24" path="res://assets/characters/cats/orange/orange_northwest_01.png" id="13_vpft8"]
-[ext_resource type="Texture2D" uid="uid://ovbtoqtjklda" path="res://assets/characters/cats/orange/orange_northwest_02.png" id="14_ccpv4"]
 [ext_resource type="Texture2D" uid="uid://b337c8uyq4eum" path="res://assets/characters/cats/orange/orange_northwest_03.png" id="15_5gw0t"]
 [ext_resource type="Texture2D" uid="uid://cadsqjowmnx2b" path="res://assets/characters/cats/orange/orange_northwest_04.png" id="16_aajgi"]
 [ext_resource type="Texture2D" uid="uid://clpunu5isuc5e" path="res://assets/characters/cats/orange/orange_south_01.png" id="17_bs5dg"]
@@ -37,16 +35,19 @@
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_l0j33")
+"texture": ExtResource("4_5dlp4")
 }, {
-"duration": 1.0,
+"duration": 0.4,
 "texture": ExtResource("2_ukwk8")
+}, {
+"duration": 0.6,
+"texture": ExtResource("1_l0j33")
 }, {
 "duration": 1.0,
 "texture": ExtResource("3_bgj51")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_5dlp4")
+"texture": ExtResource("1_l0j33")
 }],
 "loop": true,
 "name": &"orange_walk_east",
@@ -54,13 +55,19 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("5_s7s33")
-}, {
-"duration": 1.0,
 "texture": ExtResource("6_jgh3j")
 }, {
 "duration": 1.0,
+"texture": ExtResource("8_ibx08")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_s7s33")
+}, {
+"duration": 1.0,
 "texture": ExtResource("7_ua3u0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_s7s33")
 }, {
 "duration": 1.0,
 "texture": ExtResource("8_ibx08")
@@ -70,30 +77,24 @@ animations = [{
 "speed": 5.0
 }, {
 "frames": [{
-"duration": 1.0,
+"duration": 0.5,
 "texture": ExtResource("9_v703h")
 }, {
-"duration": 1.0,
-"texture": ExtResource("10_17frq")
-}, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": ExtResource("11_drran")
 }, {
 "duration": 1.0,
-"texture": ExtResource("12_yi4ct")
+"texture": ExtResource("10_17frq")
 }],
 "loop": true,
 "name": &"orange_walk_northeast",
 "speed": 5.0
 }, {
 "frames": [{
-"duration": 1.0,
+"duration": 0.5,
 "texture": ExtResource("13_vpft8")
 }, {
-"duration": 1.0,
-"texture": ExtResource("14_ccpv4")
-}, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": ExtResource("15_5gw0t")
 }, {
 "duration": 1.0,
@@ -111,10 +112,10 @@ animations = [{
 "texture": ExtResource("18_dh6up")
 }, {
 "duration": 1.0,
-"texture": ExtResource("19_pk81m")
+"texture": ExtResource("20_gduw6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("20_gduw6")
+"texture": ExtResource("19_pk81m")
 }],
 "loop": true,
 "name": &"orange_walk_south",
@@ -124,14 +125,20 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("21_xvjs3")
 }, {
-"duration": 1.0,
+"duration": 0.8,
+"texture": ExtResource("24_gdvnf")
+}, {
+"duration": 0.3,
 "texture": ExtResource("22_rj7rg")
 }, {
 "duration": 1.0,
 "texture": ExtResource("23_57cj3")
 }, {
-"duration": 1.0,
+"duration": 0.8,
 "texture": ExtResource("24_gdvnf")
+}, {
+"duration": 0.3,
+"texture": ExtResource("22_rj7rg")
 }],
 "loop": true,
 "name": &"orange_walk_southeast",
@@ -141,14 +148,20 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("25_iibaf")
 }, {
-"duration": 1.0,
+"duration": 0.8,
+"texture": ExtResource("28_sx1qj")
+}, {
+"duration": 0.3,
 "texture": ExtResource("26_r7uxs")
 }, {
 "duration": 1.0,
 "texture": ExtResource("27_8gq4p")
 }, {
-"duration": 1.0,
+"duration": 0.8,
 "texture": ExtResource("28_sx1qj")
+}, {
+"duration": 0.3,
+"texture": ExtResource("26_r7uxs")
 }],
 "loop": true,
 "name": &"orange_walk_southwest",
@@ -156,16 +169,19 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("29_o5qfl")
+"texture": ExtResource("32_0ukt3")
 }, {
-"duration": 1.0,
+"duration": 0.4,
 "texture": ExtResource("30_1sign")
+}, {
+"duration": 0.6,
+"texture": ExtResource("29_o5qfl")
 }, {
 "duration": 1.0,
 "texture": ExtResource("31_vd4c3")
 }, {
 "duration": 1.0,
-"texture": ExtResource("32_0ukt3")
+"texture": ExtResource("29_o5qfl")
 }],
 "loop": true,
 "name": &"orange_walk_west",

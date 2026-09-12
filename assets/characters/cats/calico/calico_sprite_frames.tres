@@ -1,4 +1,4 @@
-[gd_resource type="SpriteFrames" load_steps=33 format=3 uid="uid://olacyfssn202"]
+[gd_resource type="SpriteFrames" load_steps=31 format=3 uid="uid://olacyfssn202"]
 
 [ext_resource type="Texture2D" uid="uid://jnsiiokfoilw" path="res://assets/characters/cats/calico/calico_east_01.png" id="1_vuerw"]
 [ext_resource type="Texture2D" uid="uid://s83fm1wdvf73" path="res://assets/characters/cats/calico/calico_east_02.png" id="2_qc0rx"]
@@ -11,9 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://cc31udtahreda" path="res://assets/characters/cats/calico/calico_northeast_01.png" id="9_418sd"]
 [ext_resource type="Texture2D" uid="uid://fyyxng78qmn3" path="res://assets/characters/cats/calico/calico_northeast_02.png" id="10_ubks1"]
 [ext_resource type="Texture2D" uid="uid://b4l064ctq7bwk" path="res://assets/characters/cats/calico/calico_northeast_03.png" id="11_h431q"]
-[ext_resource type="Texture2D" uid="uid://7ecvfmkqj1um" path="res://assets/characters/cats/calico/calico_northeast_04.png" id="12_wm20x"]
 [ext_resource type="Texture2D" uid="uid://us4qtvl8lk35" path="res://assets/characters/cats/calico/calico_northwest_01.png" id="13_5sj76"]
-[ext_resource type="Texture2D" uid="uid://bquv31yr2tcdk" path="res://assets/characters/cats/calico/calico_northwest_02.png" id="14_36jd6"]
 [ext_resource type="Texture2D" uid="uid://5qgi56w0f486" path="res://assets/characters/cats/calico/calico_northwest_03.png" id="15_6gus6"]
 [ext_resource type="Texture2D" uid="uid://274mhfed2ryp" path="res://assets/characters/cats/calico/calico_northwest_04.png" id="16_du82q"]
 [ext_resource type="Texture2D" uid="uid://dbd4v4ncnbn0o" path="res://assets/characters/cats/calico/calico_south_01.png" id="17_p0lgk"]
@@ -37,16 +35,19 @@
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_vuerw")
+"texture": ExtResource("4_7pm15")
 }, {
-"duration": 1.0,
+"duration": 0.4,
 "texture": ExtResource("2_qc0rx")
+}, {
+"duration": 0.6,
+"texture": ExtResource("1_vuerw")
 }, {
 "duration": 1.0,
 "texture": ExtResource("3_ja2q1")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_7pm15")
+"texture": ExtResource("1_vuerw")
 }],
 "loop": true,
 "name": &"calico_walk_east",
@@ -54,13 +55,19 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("5_oxxej")
-}, {
-"duration": 1.0,
 "texture": ExtResource("6_5or5e")
 }, {
 "duration": 1.0,
+"texture": ExtResource("8_6vqeb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_oxxej")
+}, {
+"duration": 1.0,
 "texture": ExtResource("7_arryy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_oxxej")
 }, {
 "duration": 1.0,
 "texture": ExtResource("8_6vqeb")
@@ -70,30 +77,24 @@ animations = [{
 "speed": 5.0
 }, {
 "frames": [{
-"duration": 1.0,
+"duration": 0.5,
 "texture": ExtResource("9_418sd")
 }, {
-"duration": 1.0,
-"texture": ExtResource("10_ubks1")
-}, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": ExtResource("11_h431q")
 }, {
 "duration": 1.0,
-"texture": ExtResource("12_wm20x")
+"texture": ExtResource("10_ubks1")
 }],
 "loop": true,
 "name": &"calico_walk_northeast",
 "speed": 5.0
 }, {
 "frames": [{
-"duration": 1.0,
+"duration": 0.5,
 "texture": ExtResource("13_5sj76")
 }, {
-"duration": 1.0,
-"texture": ExtResource("14_36jd6")
-}, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": ExtResource("15_6gus6")
 }, {
 "duration": 1.0,
@@ -111,10 +112,10 @@ animations = [{
 "texture": ExtResource("18_1pq7x")
 }, {
 "duration": 1.0,
-"texture": ExtResource("19_nwy2i")
+"texture": ExtResource("20_jgf51")
 }, {
 "duration": 1.0,
-"texture": ExtResource("20_jgf51")
+"texture": ExtResource("19_nwy2i")
 }],
 "loop": true,
 "name": &"calico_walk_south",
@@ -124,14 +125,20 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("21_a45gv")
 }, {
-"duration": 1.0,
+"duration": 0.8,
+"texture": ExtResource("24_s3gyf")
+}, {
+"duration": 0.3,
 "texture": ExtResource("22_qxtj4")
 }, {
 "duration": 1.0,
 "texture": ExtResource("23_jenj5")
 }, {
-"duration": 1.0,
+"duration": 0.8,
 "texture": ExtResource("24_s3gyf")
+}, {
+"duration": 0.3,
+"texture": ExtResource("22_qxtj4")
 }],
 "loop": true,
 "name": &"calico_walk_southeast",
@@ -141,14 +148,20 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("25_2a5q1")
 }, {
-"duration": 1.0,
+"duration": 0.8,
+"texture": ExtResource("28_42vt8")
+}, {
+"duration": 0.3,
 "texture": ExtResource("26_2qprk")
 }, {
 "duration": 1.0,
 "texture": ExtResource("27_vcm0u")
 }, {
-"duration": 1.0,
+"duration": 0.8,
 "texture": ExtResource("28_42vt8")
+}, {
+"duration": 0.3,
+"texture": ExtResource("26_2qprk")
 }],
 "loop": true,
 "name": &"calico_walk_southwest",
@@ -156,16 +169,19 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("29_0jocn")
+"texture": ExtResource("32_ivgfg")
 }, {
-"duration": 1.0,
+"duration": 0.4,
 "texture": ExtResource("30_6if61")
+}, {
+"duration": 0.6,
+"texture": ExtResource("29_0jocn")
 }, {
 "duration": 1.0,
 "texture": ExtResource("31_t7gme")
 }, {
 "duration": 1.0,
-"texture": ExtResource("32_ivgfg")
+"texture": ExtResource("29_0jocn")
 }],
 "loop": true,
 "name": &"calico_walk_west",
